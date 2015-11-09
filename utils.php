@@ -4,7 +4,7 @@
  * @copyright 2015
  */
 
-function mess($mesText = '', $mesType = 'mInformation')
+function mess($mesText = '', $mesType = 'mInformation', $mesTitle = '')
 {
     switch ($mesType) {
         case "mInformation":
@@ -19,13 +19,15 @@ function mess($mesText = '', $mesType = 'mInformation')
     <HTML>
      <HEAD>
        <style type="text/css">
-         #modal_form {width: 600px;height: 80px;border-radius: 5px;border: 0;background: #fff;position: fixed;top: 25%;left: 50%;	margin-top: -250px; margin-left: -300px; display: none;	opacity: 0;	z-index: 5;	padding: 20px 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3)}
+         #modal_form {width: 600px;height: 80px;border: 0;background: #fff;position: fixed;top: 25%;left: 50%;	margin-top: -250px; margin-left: -300px; display: none;	opacity: 0;	z-index: 5;	padding: 20px 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3)}
+         div.title{width: 616px; height: 25px; background-color: #b5b5b5; position: relative; top: -18px; left: -8px;}
          #modal_form #modal_close {position: absolute; top: 5px; right: 5px; cursor: pointer;	display: block;}
          #overlay {z-index: 3; position: fixed; background-color: #000; opacity: 0.1; width: 100%;height: 100%; top: 0; left: 0;	cursor: pointer; display: none;}
          #p_modal {font-family: Geneva, Arial, Helvetica, Sans-serif; font-size:14px; margin-left:45px}
          .div_img {width:40px; height: 60px;  position: absolute;  display: table-cell;}
          .div_img img {height: 32px; position: absolute; top: 50%; margin-top: -16px;} 
          .div_txt {width:600px; height: 60px;  margin-left: 40px; display: table-cell; vertical-align: middle;}
+         p.title {margin: 0; color: #e7e7e7; font-family: arial  ; font-size: 20px;}
        </style>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script>
@@ -38,9 +40,12 @@ function mess($mesText = '', $mesType = 'mInformation')
         </script>
      </HEAD>
      <BODY>
-       <div id="modal_form"> 
-       <img src="img/close_modal.png" id="modal_close" width="16" height="16"/>
-       <hr noshade size=1px color="#F3F3F3">
+       <div id="modal_form">
+        <div class="title">
+            <p class="title">'.$mesTitle.'</p>
+            <img src="img/close_modal.png" id="modal_close" width="16" height="16"/>
+        </div>
+
        <div class="div_img">
          <img src="' . $img_ . '" width="32" height="32">
        </div>

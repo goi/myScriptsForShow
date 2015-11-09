@@ -6,5 +6,5 @@
  * Time: 10:20
  */
 require("utils.php");
-mess("Тестовое сообщение","mInformation");
+mess("Тестовое сообщение","mInformation","Внимание!");
 ?>
