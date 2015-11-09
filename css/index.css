@@ -1,0 +1,125 @@
+body {
+    background-color: #F5F5F5;
+    font-family: Geneva, Arial, Helvetica, Sans-serif;
+}
+
+div.header{
+    width: 101.3%;
+    height: 40px;
+    top: -8px;
+    left: -8px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+div.redline{
+    width: 100%;
+    height: 1px;
+    top: 20px;
+    position: relative;
+    background-color: #CA1F1F;
+}
+div.main_reg{
+    margin-top: 100px;
+    width: 270px;
+    height: 230px;
+    margin-left: -135px;
+    position: fixed;
+    left: 50%;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+.p1{
+    margin-bottom: 0;
+}
+
+hr{ 
+    border: none;
+    height: 1px;
+    background-color: #C1C1C1
+}
+
+input{
+    border: 1px solid #DFDFDF; 
+    height: 30px;
+    font-family: Tahoma;
+    font-size: 16px;
+    padding-left: 5px; 
+    border-radius: 3px; 
+   -webkit-border-radius: 3px; 
+   -moz-border-radius: 3px; 
+   -khtml-border-radius: 3px; 
+   
+}
+
+ a.change {
+    background: #06A3D7;
+    padding: 8px 20px;
+    color: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size:12px;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+ a.change:hover {
+    background: #23B1CA;
+}
+
+ a.submit {
+    position: relative;
+    background: #06A3D7;
+    padding: 10px 20px;
+    color: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size:14px;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+    top: 30px;
+    left: 180px;
+}
+
+ a.submit:hover {
+    background: #23B1CA;
+}
+
+
+ a.add {
+    position: relative;
+    background: #244CFC;
+    top: 10px;
+    left: 20px;
+    padding: 5px 20px;
+    color: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size:14px;
+    font-family: Arial;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ a.add:hover {
+    background: #6489FF;
+}
+
+div#err{
+    top: 20px;
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    color: #CA1F1F;
+    display: none;
+}
+
+
